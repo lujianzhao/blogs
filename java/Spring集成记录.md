@@ -28,9 +28,9 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 ```
-需要增加jar包 
+需要增加jar包
 http://central.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.4.2/jackson-mapper-asl-1.4.2.jar 
-http://central.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.4.2/jackson-core-asl-1.4.2.jar 
+http://central.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.4.2/jackson-core-asl-1.4.2.jar
 Maven地址
 ```xml
 <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl -->
