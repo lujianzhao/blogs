@@ -1,6 +1,6 @@
 ```bash
 serical@DESKTOP-SCE4JAT MINGW64 /d/workspace/NodeJs/blogs (master)
-#要修改哪次提交将pack改成edit
+#要修改哪次提交将pick改成edit
 $ git rebase -i HEAD~3
 Stopped at 0f65600... Oracle PLSQL配置.md
 You can amend the commit now, with
