@@ -19,7 +19,7 @@ character_set_server=utf8
 ###三、初始化数据库
 命令如下：
 ```bash
-//mysqld --initialize --user=mysql --console
+#mysqld --initialize --user=mysql --console
 D:\Program Files\Mysql\bin>mysqld.exe --initialize --user=mysql --console
 2016-11-14T01:44:54.364486Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
 2016-11-14T01:44:54.364486Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
@@ -37,17 +37,17 @@ D:\Program Files\Mysql\bin>mysqld.exe --initialize --user=mysql --console
 D:\Program Files\Mysql\bin>mysqld --install MySQL
 Service successfully installed.
 
-// 移除服务
+# 移除服务
 D:\Program Files\Mysql\bin>mysqld.exe --remove
 Service successfully removed.
 ```
 
 ###五、登录并修改密码
 ```bash
-//回车执行后，输入刚才记录的随机密码
+#回车执行后，输入刚才记录的随机密码
 mysql -u root -p 
 
-//执行成功后，控制台显示 mysql>，则表示进入mysql，修改密码
+#执行成功后，控制台显示 mysql>，则表示进入mysql，修改密码
 mysql> set password for root@localhost = password('123456');
 Query OK, 0 rows affected, 1 warning (0.00 sec)
 ```
