@@ -21,6 +21,7 @@ probably due to a new Java class file version that isn't supported yet: file
 nested exception is java.lang.IllegalArgumentException
 ```
 这个是`Idea jdk`环境太高`spring 3.x`在`jdk1.8` 上运行不了，配置如图
+
 编译级别：
 ![](https://dn-serical.qbox.me/15.png)
 
@@ -35,8 +36,10 @@ Annotation-specified bean name 'log' for bean class [com.mysql.jdbc.log.Log] con
 with existing, non-compatible bean definition of same name and class 
 [com.alibaba.druid.support.logging.Log]
 ```
+
 错误的配置：
 ![](https://dn-serical.qbox.me/17.png)
+
 
 正确的配置：
 ![](https://dn-serical.qbox.me/18.png)
