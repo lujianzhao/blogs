@@ -36,6 +36,7 @@ start
 end
 ```
 **所有static的执行顺序为从上到下**
+
 http://blog.csdn.net/lanxuezaipiao/article/details/16753743
 
 http://liujiacai.net/blog/2014/07/12/order-of-initialization-in-java/

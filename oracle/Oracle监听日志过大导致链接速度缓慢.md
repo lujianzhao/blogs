@@ -1,6 +1,6 @@
 ###一、问题：
-1. 局域网写代码连`Oracle`很慢，'SELECT * FROM DUAL' 要执行8分钟；
-2. `PL/SQL`连'Oracle'假死很久才连上，连上后打开`SQL WINDOW`，执行'SQL'，初始化很慢，执行却不慢；
+1. 局域网写代码连`Oracle`很慢，`SELECT * FROM DUAL` 要执行8分钟；
+2. `PL/SQL`连`Oracle`假死很久才连上，连上后打开`SQL WINDOW`，执行`SQL`，初始化很慢，执行却不慢；
 3. 应用起不来，后来才发现能起来，不过要10多分钟；
 
 ###二、解决方法：
