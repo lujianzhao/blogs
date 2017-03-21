@@ -1,4 +1,4 @@
-###PSFTP上传文件
+### PSFTP上传文件
 ```bash
 D:\Program Files\putty>psftp
 psftp: no hostname specified; use "open host.name" to connect
@@ -12,13 +12,13 @@ z
 psftp> quit
 ```
 
-###linux解压
+### linux解压
 ```bash
 #-C指定解压位置
 [root@serical01 ~]# tar -zxvf jdk-7u67-linux-x64.gz -C /usr/java
 ```
 
-###安装JDK
+### 安装JDK
 ```bash
 #查询centos自带的JDK
 [root@serical01 bin]# rpm -qa|grep java

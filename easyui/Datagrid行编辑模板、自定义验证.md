@@ -1,4 +1,4 @@
-###一、datagrid行编辑模板
+### 一、datagrid行编辑模板
 ```js
  $(function () {
             initDatagrid(getQueryParams());
@@ -203,7 +203,7 @@
         }
 ```
 
-###二、treegrid行编辑
+### 二、treegrid行编辑
 ```js
 $(function() {
 
@@ -375,7 +375,7 @@ $(function() {
         }
 ```
 
-###三、自定义验证 
+### 三、自定义验证 
 引入如下js，在`validatebox`中使用，如`validType : “phoneOrMobile”`,
 ```js
 $.extend($.fn.validatebox.defaults.rules, {
