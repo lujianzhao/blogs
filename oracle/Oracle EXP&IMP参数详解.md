@@ -1,7 +1,7 @@
-###Oracle EXP&IMP参数详解
+### Oracle EXP&IMP参数详解
 exp&imp是Oracle自带的导入导出命令，运用它，即使不需要那结UI工具也能轻易的完成数据导出导入工作，下面是它们的参数：
 
-###EXP参数详解
+### EXP参数详解
 使用的格式是：EXP KEYWORD=value 或 KEYWORD=(value1,value2,…,valueN) 
 其中USERID是必须的且为第一个参数
 
@@ -33,7 +33,7 @@ exp&imp是Oracle自带的导入导出命令，运用它，即使不需要那结U
 * TRANSPORT_TABLESPACE 导出可传输的表空间元数据 (N)
 * TABLESPACES 将传输的表空间列表
 
-###IMP参数详解
+### IMP参数详解
 使用的格式是：IMP KEYWORD=value 或 KEYWORD=(value1,value2,…,valueN) 
 其中USERID是必须的且为第一个参数
 

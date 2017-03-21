@@ -1,7 +1,7 @@
-###一、背景
+### 一、背景
 工作中需要导出word功能，google了一番都推荐freemarker导出word，可以事先在word中定制好模板，另存为模板xml，然后在需要动态的地方使用freemarker语言动态输出。
 
-###二、实现
+### 二、实现
 1、编辑模板<br>
 ![](https://dn-serical.qbox.me/9.png)
 

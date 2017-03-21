@@ -1,4 +1,4 @@
-###1、版本问题，错误如下：
+### 1、版本问题，错误如下：
 ```java
 org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read 
 candidatecomponent class: URL [jar:file:/D:/workspace/JavaSE/tms/target/tms/WEB-
@@ -32,7 +32,7 @@ nested exception is java.lang.IllegalArgumentException
 
 **两个都必须是1.7才能运行！！！**
 
-###2、两个log冲突的问题：
+### 2、两个log冲突的问题：
 ```java
 Annotation-specified bean name 'log' for bean class [com.mysql.jdbc.log.Log] conflicts 
 with existing, non-compatible bean definition of same name and class 

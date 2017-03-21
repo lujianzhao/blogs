@@ -1,4 +1,4 @@
-###安装VMTools工具
+### 安装VMTools工具
 ```bash
 #虚拟机-->安装Vmware Tools
 [root@serical01 /]# cp VMwareTools-8.6.1-19175.tar.gz ~/Downloads
@@ -9,7 +9,7 @@
 [root@serical01 /]# reboot
 ```
 
-###配置IP
+### 配置IP
 ```bash
 [root@serical01 /]# vim /etc/sysconfig/network-scripts/ifcfg-eth0
 #主要修改如下：
@@ -21,7 +21,7 @@ DNS1=8.8.8.8
 DNS1=8.8.4.4
 ```
 
-###配置主机名
+### 配置主机名
 ```bash
 [root@serical01 /]# vim /etc/sysconfig/network
 HOSTNAME=serical01
@@ -30,7 +30,7 @@ HOSTNAME=serical01
 192.168.8.88    serical01
 ```
 
-###关闭防火墙
+### 关闭防火墙
 ```bash
 #查看各种启动级别下iptables自启动情况
 [root@serical01 /]# chkconfig iptables --list
@@ -40,7 +40,7 @@ HOSTNAME=serical01
 [root@serical01 /]# chkconfig iptables off
 ```
 
-###配置163的yum源
+### 配置163的yum源
 ```bash
 #1.下载repo文件
 [root@serical01 /]# wget http://mirrors.163.com/.help/CentOS6-Base-163.repo

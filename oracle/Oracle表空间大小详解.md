@@ -1,7 +1,7 @@
-###一、问题
+### 一、问题
 sql需要索引创建索引时提示xxx表空不足，只好临时建到另一个表空间上，先解决了问题。生产库一个表空间已经到了30G的大小，后来想起随着时间表空间总会满的，到时候系统出了问题就不好解决了，先了解下如何解决该问题。
 
-###二、了解相关知识
+### 二、了解相关知识
 按照Oracle文档的描述，每个`datafile`的最大容量为`(2^22-1)`个`block`，即`4194303`个`block`，而当前数据库的`block大`小是`8k`，
 ```sql
 SQL> SHOW PARAMETER DB_BLOCK_SIZE;
@@ -14,7 +14,7 @@ db_block_size                        integer     8192
 `(2^22-1)*32K = 128G` (注：Oracle最大支持block为32k)。存在这个限制是因为`Oracle`的内部`ROWID`使用22位2进制数来存储不同的`block`号，
 所以22位最多代表`(2^22-1)`个`block`。
 
-###三、测试
+### 三、测试
 ```sql
 --这里创建一个表空间测试下
 CREATE TABLESPACE SERICAL
@@ -91,7 +91,7 @@ TABLESPACE_NAME  BYTES     BLOCKS      MAXBYTES   MAXBLOCKS
 SERICAL          300      38400        65535.9687    8388604
 ```
 
-###应用
+### 应用
 ```sql
 CREATE TABLESPACE PERSONAL_DATA
 LOGGING

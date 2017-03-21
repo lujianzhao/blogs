@@ -1,4 +1,4 @@
-###取当前页page，rows
+### 取当前页page，rows
 ```js
 var page = $("#dg").datagrid("getPager").data("pagination").options;
 param.page = page.pageNumber;
@@ -8,7 +8,7 @@ $("#dg").datagrid().data("datagrid").options.pageSize
 $("#dg").datagrid().data("datagrid").options.pageNumber
 ```
 
-###easyui遮罩层
+### easyui遮罩层
 ```js
 /**处理等待  */
 function onLoading(divId) {
@@ -39,7 +39,7 @@ function removeLoad(divId) {
 }
 ```
 
-###考试右上角时间一直跟随滚动
+### 考试右上角时间一直跟随滚动
 ```js
 /**滚动事件  */
 function scrollEvent() {

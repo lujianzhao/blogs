@@ -98,7 +98,7 @@ public class Test {
 }
 ```
 
-###浅复制console输出
+### 浅复制console输出
 ```
 Person [id=1, name=name, ints=[100]]
 Person [id=2, name=name, ints=[100]]
@@ -117,7 +117,7 @@ name--name
 详情见这里 
 http://www.2cto.com/kf/201401/273852.html
 
-###深度复制另一个解决办法
+### 深度复制另一个解决办法
 ```java
 package com;
 

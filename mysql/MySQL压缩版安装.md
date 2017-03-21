@@ -1,9 +1,9 @@
-###一、下载相关文件
+### 一、下载相关文件
 [MySQL压缩包](http://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.16-winx64.zip)
 
 [压缩版安装文档](http://dev.mysql.com/doc/refman/5.7/en/windows-install-archive.html)
 
-###二、配置环境
+### 二、配置环境
 1. 添加环境变量，将上面压缩包解压到`D:\Program Files\Mysql`，然后将`D:\Program Files\Mysql\bin`添加到环境变量PATH中； 
 2. 复制解压目录下的`my-default.ini`文件，重命名为`my.ini`； 
 3. 添加如下配置：
@@ -16,7 +16,7 @@ collation_server=utf8_general_ci
 character_set_server=utf8
 ```
 
-###三、初始化数据库
+### 三、初始化数据库
 命令如下：
 ```bash
 #mysqld --initialize --user=mysql --console
@@ -32,7 +32,7 @@ D:\Program Files\Mysql\bin>mysqld.exe --initialize --user=mysql --console
 ```
 **在控制台消息尾部会出现随机生成的初始密码，记下来**
 
-###四、添加为系统服务
+### 四、添加为系统服务
 ```bash
 D:\Program Files\Mysql\bin>mysqld --install MySQL
 Service successfully installed.
@@ -42,7 +42,7 @@ D:\Program Files\Mysql\bin>mysqld.exe --remove
 Service successfully removed.
 ```
 
-###五、登录并修改密码
+### 五、登录并修改密码
 ```bash
 #回车执行后，输入刚才记录的随机密码
 mysql -u root -p 

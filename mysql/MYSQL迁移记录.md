@@ -1,7 +1,7 @@
-###一、原因
+### 一、原因
 由于ACE产品即将下架，配套MYSQL服务也即将关闭，导致必须要把数据库迁移到云服务器上。
 
-###二、迁移过程
+### 二、迁移过程
 **Before You Begin**<br>
 Ensure that you have followed the Getting Started and Securing Your Server guides, and the Linode’s hostname is set.
 To check your hostname run:
@@ -82,7 +82,7 @@ update user set host='%' where user='testuser';
 systemctl restart mysqld;
 ```
 
-###乱码
+### 乱码
 ```bash
 #创建数据库时指定编码
 CREATE DATABASE mydb
@@ -93,7 +93,7 @@ collation_server=utf8_general_ci
 character_set_server=utf8
 ```
 
-###mysql导出导入
+### mysql导出导入
 ```bash
 // 导出
 mysqldump -uroot -ppasswd dbname > p.sql
@@ -101,7 +101,7 @@ mysqldump -uroot -ppasswd dbname > p.sql
 mysql -uroot -ppasswd dbname < d:/p.sql
 ```
 
-###sublime换行
+### sublime换行
 ```js
 // Preferences->Setting-User:
 {

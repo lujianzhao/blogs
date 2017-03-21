@@ -1,15 +1,15 @@
-###一、查询锁
+### 一、查询锁
 ```sql
 SELECT L.SESSION_ID || ',' || S.SERIAL#
   FROM V$LOCKED_OBJECT L, V$SESSION S
  WHERE S.SID = L.SESSION_ID
 ```
-###二、解锁
+### 二、解锁
 ```sql
 ALTER SYSTEM KILL SESSION '28,3706';
 ```
 
-###三、修改连接数
+### 三、修改连接数
 ```sql
 -- session数
 SQL> show parameter session

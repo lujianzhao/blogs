@@ -1,11 +1,11 @@
-###允许局域网访问
+### 允许局域网访问
 修改配置文件`redis.conf`:
 ```bash
 vim /etc/redis.conf 
 #查找bind 127.0.0.1，将其注释掉
 ```
 
-###设置密码
+### 设置密码
 修改配置文件`redis.conf`:
 ```bash
 vim /etc/redis.conf 
@@ -13,7 +13,7 @@ vim /etc/redis.conf
 systemctl restart redis.service
 ```
 
-###NodeJs连接Redis方式一
+### NodeJs连接Redis方式一
 通过`createClient`方法第三个参数，`auth_pass`指定密码
 ```js
 /**
@@ -37,7 +37,7 @@ client.on("ready", function (err) {
 });
 ```
 
-###NodeJs连接Redis方式二
+### NodeJs连接Redis方式二
 通过client的auth方法进行密码认证
 ```js
 /**

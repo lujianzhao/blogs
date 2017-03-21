@@ -1,4 +1,4 @@
-###相关sql语句
+### 相关sql语句
 ```sql
 CREATE TABLE CTEST
 ( ID INTEGER,
@@ -30,7 +30,7 @@ CTEST                          SYS_P21
 CTEST                          SYS_P22
 ```
 
-###说明
+### 说明
 ```sql
 interval使用之后，就不用手工增加分区，来适应数据的增长。 
 根据年月 INTERVAL(NUMTOYMINTERVAL(1,'YEAR')) 

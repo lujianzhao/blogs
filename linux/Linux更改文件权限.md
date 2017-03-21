@@ -1,5 +1,5 @@
-###使用方式 : chmod [-cfvR] [--help] [--version] mode file...
-###说明 :
+### 使用方式 : chmod [-cfvR] [--help] [--version] mode file...
+### 说明 :
 Linux/Unix 的档案存取权限分为三级 : 档案拥有者、群组、其他。利用 chmod 可以藉以控制档案如何被他人所存取。 mode : 权限设定字串，格式如下 : [ugoa...][[+-=][rwxX]...][,...]，其中: 
 * u 表示该档案的拥有者， 
 * g 表示与该档案的拥有者属于同一个群体(group)者， 
@@ -19,7 +19,7 @@ Linux/Unix 的档案存取权限分为三级 : 档案拥有者、群组、其他
 * –help : 显示辅助说明 
 * –version : 显示版本
 
-###使用例子
+### 使用例子
 ```bash
 [root@serical01 test]# ll -R
 .:
@@ -31,7 +31,7 @@ total 4
 -rw-r--r--. 1 root root 40 Jul  8 21:01 b
 ```
 
-###给当前路径所有文件及目录递归的拥有者加上x（执行）权限
+### 给当前路径所有文件及目录递归的拥有者加上x（执行）权限
 ```bash
 [root@serical01 test]# chmod u+x -R *
 [root@serical01 test]# ll -R
@@ -44,7 +44,7 @@ total 4
 -rwxr--r--. 1 root root 40 Jul  8 21:01 b
 ```
 
-###拥有者去掉r权限，所属组加上w权限，其他赋予rwx权限
+### 拥有者去掉r权限，所属组加上w权限，其他赋予rwx权限
 ```bash
 [root@serical01 test]# chmod u-r,g+w,o=rwx -R *
 [root@serical01 test]# ll -R
@@ -57,7 +57,7 @@ total 4
 --wxrw-rwx. 1 root root 40 Jul  8 21:01 b
 ```
 
-###数字表示形式r（4）w（2）x（1），表示u=rwx,g=rx,o=rx
+### 数字表示形式r（4）w（2）x（1），表示u=rwx,g=rx,o=rx
 ```bash
 [root@serical01 test]# chmod 755 -R *
 [root@serical01 test]# ll -R

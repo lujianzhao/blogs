@@ -1,4 +1,4 @@
-###一：component-scan
+### 一：component-scan
 ```java
 <context:component-scan base-package="com.serical.action"/>
 ```
@@ -12,7 +12,7 @@
  use-default-filters="false"
 ```
 
-###二：HTTP CODE 406
+### 二：HTTP CODE 406
 增加转换器`MappingJacksonHttpMessageConverter`
 ```xml
 <mvc:annotation-driven>

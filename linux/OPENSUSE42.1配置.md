@@ -1,4 +1,4 @@
-###换国内源
+### 换国内源
 禁用官方源和DVD源
 ```bash
 zypper -mr -d openSUSE-42.1-0
@@ -6,7 +6,7 @@ zypper -mr -d repo-oss
 zypper -mr -d repo-update
 zypper -mr -d repo-update-non-oss
 ```
-###切换为科大源 
+### 切换为科大源 
 https://lug.ustc.edu.cn/wiki/mirrors/help/opensuse
 ```bash
 sudo zypper ar -fc https://mirrors.ustc.edu.cn/opensuse/distribution/leap/42.1/repo/oss USTC:42.1:OSS
@@ -14,12 +14,12 @@ sudo zypper ar -fc https://mirrors.ustc.edu.cn/opensuse/distribution/leap/42.1/r
 sudo zypper ar -fc https://mirrors.ustc.edu.cn/opensuse/update/leap/42.1/oss USTC:42.1:UPDATE-OSS
 sudo zypper ar -fc https://mirrors.ustc.edu.cn/opensuse/update/leap/42.1/non-oss USTC:42.1:UPDATE-NON-OSS
 ```
-###更新系统
+### 更新系统
 ```bash
 sudo zypper update
 ```
 
-###切换JDK版本
+### 切换JDK版本
 由于`suse`自带安装`openjdk`，删除比较麻烦，这里选择切换JDK版本，JDK安装和普通linux一样，解压然后修改`/etc/profile`,
 然后需要`update-alternatives`命令，安装`java`,`javac`
 
@@ -72,7 +72,7 @@ ll /etc/alternatives/java
 lrwxrwxrwx 1 root root 30 12月  7 16:10 /etc/alternatives/java -> /usr/java/jdk1.7.0_67/bin/java
 ```
 
-###SQL DEVELOPER
+### SQL DEVELOPER
 图标启动不了，修改
 ```bash
 #SetJavaHome，为有效JDK路径即可

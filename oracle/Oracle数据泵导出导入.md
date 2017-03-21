@@ -1,4 +1,4 @@
-###准备工作
+### 准备工作
 ```sql
 -- 创建DIRECTORY
 CREATE DIRECTORY DMP_DIR AS 'D:\app\expdp_dir'
@@ -12,7 +12,7 @@ DROP DIRECTORY DMP_DIR ;
 SELECT * FROM USER_TAB_PRIVS;
 ```
 
-###expdp导出
+### expdp导出
 ```bash
 expdp serical/123456 directory=dmp_dir dumpfile=test.dmp logfile=test.log
 
@@ -42,7 +42,7 @@ SERICAL.SYS_EXPORT_SCHEMA_01 的转储文件集为:
 ```
 **NLOGFILE=Y表示不生成日志文件**
 
-###impdp导入
+### impdp导入
 ```bash
 impdp serical/123456 directory=dmp_dir dumpfile=test.dmp nologfile=y full=y
 
@@ -63,7 +63,7 @@ ORA-31684: 对象类型 USER:"SERICAL" 已存在
 作业 "SERICAL"."SYS_IMPORT_FULL_01" 已经完成, 但是有 1 个错误 (于 16:08:55 完成)
 ```
 
-###user(serical)不存在时直接导入
+### user(serical)不存在时直接导入
 ```bash
 impdp system/123456 directory=dmp_dir dumpfile=test.dmp nologfile=y 
 remap_schema=serical:serical full=y

@@ -1,15 +1,15 @@
-###一、增加环境变量
+### 一、增加环境变量
 ```bash
 TNS_ADMIN = D:\app\serical\product\11.2.0\dbhome_1\NETWORK\ADMIN
 NLS_LANG = SIMPLIFIED CHINESE_CHINA.ZHS16GBK
 ```
 
-###二、修改plsql中的oci.dll地址
+### 二、修改plsql中的oci.dll地址
 ```bash
 D:\app\instantclient_11_2\oci.dll
 ```
 
-###三、Oracle局域网访问
+### 三、Oracle局域网访问
 1、修改`listener.ora`中的`HOST`为计算机全名
 ```bash
 SID_LIST_LISTENER =

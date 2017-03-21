@@ -1,4 +1,4 @@
-###一、修改`jquery.easyui.min.js` 
+### 一、修改`jquery.easyui.min.js` 
 在`js`中查询`currentText`，修改如下
 ```js
 currentText : "Today",
@@ -41,7 +41,7 @@ currentText : "Today",
                 } ],
 ```
 
-###二、修改`easyui-lang-zh_CN.js`
+### 二、修改`easyui-lang-zh_CN.js`
 在`js`中查询`currentText`，修改如下
 ```js
 if ($.fn.datebox){
@@ -78,7 +78,7 @@ if ($.fn.datetimebox && $.fn.datebox){
 }
 ```
 
-###效果
+### 效果
 * 修改前：
 
 ![](https://dn-serical.qbox.me/12.png)

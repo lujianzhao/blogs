@@ -1,4 +1,4 @@
-###1、知识说明
+### 1、知识说明
 Oracle 11g中推出的“延迟段创建”（`Deferred Segment Creation`）特性，以及当我们使用这种特性时，需要注意的问题。
 
 `Deferred Segment Creation`
@@ -42,7 +42,7 @@ JUSTFORTEST     65536          8        1
 Oracle推出`Deferred Segment Creation`的出发点很单纯，就是出于对象空间节省的目的。如果一个空表从来就没有使用过，创建`segment`对象，
 分配空间是“不合算”的，所以提出推迟段创建的时间点。
 
-###2、永久解决方案，但对之前已存在表无效
+### 2、永久解决方案，但对之前已存在表无效
 ```sql
 -- 为true表示使用延迟创建segment
 SQL> SHOW PARAMETER DEFERRED_SEGMENT_CREATION
@@ -54,7 +54,7 @@ SQL> ALTER SYSTEM SET DEFERRED_SEGMENT_CREATION = FALSE;
 System altered
 ```
 
-###3、兼容以前创建的表
+### 3、兼容以前创建的表
 ```sql
 -- 查询需要手动分配segment的table
 SELECT 'ALTER TABLE '||T.TABLE_NAME||' ALLOCATE EXTENT;' FROM USER_TABLES T 

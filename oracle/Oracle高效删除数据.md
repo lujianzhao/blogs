@@ -1,4 +1,4 @@
-###方式一
+### 方式一
 ```sql
 DELETE FROM TABLENAME T 
 WHERE T.ROWID NOT IN(
@@ -6,7 +6,7 @@ SELECT MAX(B.ROWID) FROM TABLENAME B
 GROUP BY B.COL1, B.COL2 ...
 )
 ```
-###方式二
+### 方式二
 ```sql
 DELETE FROM TABLENAME T
 WHERE T.ROWID <> (
@@ -15,4 +15,4 @@ WHERE T.COL1 = B.COL1
 AND T.COL2 = B.COL2
 )
 ```
-###方式二效率明显高于方式一
+### 方式二效率明显高于方式一
