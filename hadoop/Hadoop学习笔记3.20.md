@@ -11,7 +11,7 @@
 
 ## 二、环境搭建
 ### 配置网络
-```bash
+```
 [root@master ~]# vim /etc/sysconfig/network-scripts/ifcfg-eno16777736 
 TYPE=Ethernet
 IPADDR=192.168.8.8
@@ -24,17 +24,17 @@ NETMASK=255.255.255.0
 ```
 
 ### 禁用防火墙
-```bash
+```
 [root@master ~]# systemctl disable firewalld
 ```
 
 ### 配置主机名
-```bash
+```
 [root@master ~]# hostnamectl set-hostname master
 ```
 
 ### 配置hosts
-```bash
+```
 [root@master ~]# vim /etc/hosts
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
@@ -45,7 +45,7 @@ NETMASK=255.255.255.0
 ```
 
 ### 解压hadoop,jdk配置环境变量
-```bash
+```
 [root@master local]# tar -zxvf hadoop-2.7.3.tar.gz
 [root@master local]# tar -zxvf jdk-8u121-linux-x64.tar.gz
 
@@ -58,7 +58,7 @@ export PATH=$PATH:/usr/local/hadoop/bin:/usr/local/hadoop/sbin
 ```
 
 ### 配置hadoop
-```bash
+```
 [root@master hadoop]# vim core-site.xml
 <configuration>
         <property>
@@ -72,7 +72,7 @@ export JAVA_HOME=/usr/local/jdk
 ```
 
 ### NameNode
-```bash
+```
 # 格式化namenode
 [root@master ~]# hdfs namenode -format
 # 运行namenode
@@ -86,14 +86,14 @@ starting namenode, logging to /usr/local/hadoop/logs/hadoop-root-namenode-master
 [root@master logs]# more hadoop-root-namenode-master.log
 ```
 重要的信息如下：
-```bash
+```
 org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /tmp/hadoop-root
 /dfs/name is in an inconsistent state: storage directory does not exist or is not accessible.
 ```
 `name`目录不存在，创建即可，创建后需要**重新格式化**才能起来
 
 ### DataNode
-```bash
+```
 # 运行datanode
 [root@slave1 hadoop]# hadoop-daemon.sh start datanode
 starting datanode, logging to /usr/local/hadoop/logs/hadoop-root-datanode-slave1.out
@@ -109,7 +109,7 @@ java.io.IOException: All specified directories are failed to load.
 ```
 
 ### 修改DataNode的clusterID
-```bash
+```
 [root@master current]# more /tmp/hadoop-root/dfs/name/current/VERSION 
 #Fri Mar 24 23:03:40 CST 2017
 namespaceID=1358526885
