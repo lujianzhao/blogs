@@ -1,6 +1,6 @@
 ## 配置集群启动
 ### 配置slaves
-```bash
+```
 [root@master hadoop]# pwd
 /usr/local/hadoop/etc/hadoop
 [root@master hadoop]# vim slaves 
