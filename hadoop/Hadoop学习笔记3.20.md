@@ -74,12 +74,12 @@ starting namenode, logging to /usr/local/hadoop/logs/hadoop-root-namenode-master
 # namenode起不来，需要看日志
 [root@master logs]# more hadoop-root-namenode-master.log
 ```
-**重要的信息如下：**
+重要的信息如下：
 ```bash
 org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /tmp/hadoop-root
 /dfs/name is in an inconsistent state: storage directory does not exist or is not accessible.
 ```
-**`name`目录不存在，创建即可，创建后需要`重新格式化`才能起来**
+`name`目录不存在，创建即可，创建后需要**重新格式化**才能起来
 
 ### DataNode
 ```bash
