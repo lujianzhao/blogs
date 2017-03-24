@@ -33,6 +33,17 @@ NETMASK=255.255.255.0
 [root@master ~]# hostnamectl set-hostname master
 ```
 
+### 配置hosts
+```bash
+[root@master ~]# vim /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.8.8 master
+192.168.8.10 slave1
+192.168.8.11 slave2
+192.168.8.12 slave3
+```
+
 ### 解压hadoop,jdk配置环境变量
 ```bash
 [root@master local]# tar -zxvf hadoop-2.7.3.tar.gz
