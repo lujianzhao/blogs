@@ -91,3 +91,9 @@ Stopping secondary namenodes [0.0.0.0]
 [root@master ~]# jps
 4184 Jps
 ```
+
+### HDFS基本使用
+文档地址：http://hadoop.apache.org/docs/r2.7.3/
+```bash
+
+```
