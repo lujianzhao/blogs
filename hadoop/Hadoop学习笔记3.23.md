@@ -1,6 +1,6 @@
 ## 配置集群启动
 ### 配置slaves
-```
+```bash
 [root@master hadoop]# pwd
 /usr/local/hadoop/etc/hadoop
 [root@master hadoop]# vim slaves 
@@ -10,7 +10,7 @@ slave3
 ```
 
 ### 配置ssh免登录
-```
+```bash
 [root@master hadoop]# start-dfs.sh 
 Starting namenodes on [master]
 The authenticity of host 'master (192.168.8.8)' can't be established.
@@ -64,7 +64,7 @@ and check to make sure that only the key(s) you wanted were added.
 ```
 
 ### 集群管理
-```
+```bash
 # 启动集群
 [root@master ~]# start-dfs.sh 
 Starting namenodes on [master]
