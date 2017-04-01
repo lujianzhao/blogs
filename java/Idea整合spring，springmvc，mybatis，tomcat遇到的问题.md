@@ -24,11 +24,11 @@ nested exception is java.lang.IllegalArgumentException
 
 编译级别：
 
-![](https://dn-serical.qbox.me/15.png)
+![](../static/15.png)
 
 源代码级别：
 
-![](https://dn-serical.qbox.me/16.png)
+![](../static/16.png)
 
 **两个都必须是1.7才能运行！！！**
 
@@ -41,9 +41,9 @@ with existing, non-compatible bean definition of same name and class
 
 错误的配置：
 
-![](https://dn-serical.qbox.me/17.png)
+![](../static/17.png)
 
 
 正确的配置：
 
-![](https://dn-serical.qbox.me/18.png)
+![](../static/18.png)

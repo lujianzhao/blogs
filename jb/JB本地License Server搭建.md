@@ -1,5 +1,5 @@
 ### 一、相关软件
-下载`idea_license_server.zip`<br>
+下载[idea_license_server.zip](../static/idea_license_server.zip)<br>
 [nssm.exe](http://nssm.cc/download)<br>
 [IntelliJIDEALicenseServer_windows_amd64.exe](http://blog.lanyus.com/archives/231.html)
 
@@ -12,7 +12,7 @@ nssm.exe install idea_license_server
 nssm.exe remove idea_license_server
 ```
 弹出框如下：<br>
-![](install.png)<br>
+![](../static/29.png)<br>
 添加参数自定义用户名、端口
 ```bash
 IntelliJIDEALicenseServer_windows_amd64.exe -help
@@ -29,4 +29,4 @@ Usage of IntelliJIDEALicenseServer_windows_amd64.exe:
 点击`install service`完成安装
 ### 三、使用
 `Help->Register`<br>
-![](register.png)
+![](../static/30.png)

@@ -81,8 +81,8 @@ if ($.fn.datetimebox && $.fn.datebox){
 ### 效果
 * 修改前：
 
-![](https://dn-serical.qbox.me/12.png)
+![](../static/12.png)
 
 * 修改后：
 
-![](https://dn-serical.qbox.me/13.png)
+![](../static/13.png)

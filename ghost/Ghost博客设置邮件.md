@@ -16,11 +16,11 @@ mail: {
 }
 ```
 网易邮箱协议、地址、端口如下：<br>
-![](https://dn-serical.qbox.me/5.png)
+![](../static/5.png)
 
 
 关于客户端授权密码：<br>
-![](https://dn-serical.qbox.me/6.png)
+![](../static/6.png)
 
 
 不知道的请重置然后记下来，只显示一次
@@ -42,8 +42,8 @@ mail: {
 ```
 申请地址：网易免费企业邮箱
 需要注意的就是添加MX记录和TXT记录，主机记录不能写mail,域名,改成@才行,如下图： <br>
-![](https://dn-serical.qbox.me/7.png)
+![](../static/7.png)
 
 
 效果如图：<br>
-![](https://dn-serical.qbox.me/8.png)
+![](../static/8.png)

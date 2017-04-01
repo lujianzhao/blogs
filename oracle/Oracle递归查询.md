@@ -18,7 +18,7 @@ WHERE COND3
 -- 测试表数据
 SELECT * FROM TTT T;
 ```
-![](https://dn-serical.qbox.me/2.png)
+![](../static/2.png)
 
 ```sql
 -- 递归查询PID=1记录的父节点
@@ -27,7 +27,7 @@ START WITH T.PID = 1
 CONNECT BY PRIOR T.PID = T.ID
 ORDER BY T.ID;
 ```
-![](https://dn-serical.qbox.me/3.png)
+![](../static/3.png)
 
 ```sql
 -- 递归查询PID=1记录的子节点
@@ -36,7 +36,7 @@ START WITH T.PID = 1
 CONNECT BY T.PID = PRIOR T.ID
 ORDER BY T.ID
 ```
-![](https://dn-serical.qbox.me/4.png)
+![](../static/4.png)
 
 注意点
 PRIOR XXX表示的是满足START WITH条件记录的XXX字段，通过ID或者PID来控制在查询子节点还是父节点。

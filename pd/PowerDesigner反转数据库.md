@@ -10,12 +10,12 @@
 
 使用反转，配置连接
 
-![](https://dn-serical.qbox.me/26.png)
+![](../static/26.png)
 
 反转工程
 
-![](https://dn-serical.qbox.me/27.png)
+![](../static/27.png)
 
 选择之前配置的连接，确定然后选择需要反转的表结构
 
-![](https://dn-serical.qbox.me/28.png)
+![](../static/28.png)

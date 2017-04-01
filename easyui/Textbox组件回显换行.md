@@ -1,10 +1,10 @@
 使用`textbox`组件换行保存后，修改的时候还原内容就会失去换行符，看着比较怪异
 
-![](https://dn-serical.qbox.me/19.png)
+![](../static/19.png)
 
 保存后修改回显如下：
 
-![](https://dn-serical.qbox.me/20.png)
+![](../static/20.png)
 
 ## 解决方法
 

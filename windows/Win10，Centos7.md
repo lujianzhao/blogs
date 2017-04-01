@@ -13,7 +13,7 @@ Window 改为 204 232 207
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\DefaultColors\Standard
 Window的值为 `cce8cf` 其实就是 204 232 207的16进制数
 ```
-![颜色图片](https://dn-serical.qbox.me/1.png)
+![颜色图片](../static/1.png)
 
 ### 删除自带应用
 ```bash

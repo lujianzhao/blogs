@@ -3,10 +3,10 @@
 
 ### 二、实现
 1、编辑模板<br>
-![](https://dn-serical.qbox.me/9.png)
+![](../static/9.png)
 
 2、保存模板<br>
-![](https://dn-serical.qbox.me/10.png)
+![](../static/10.png)
 
 3、动态部分使用freemarker输出
 这里的模板不能换行，换行后生成的word会报错，虽然也能打开，但是体验不好，复制一份在myeclipse中格式化修改需要动态生成的部分，然后在原模板中做相同的操作，由于xml比较长就不一一显示了。
@@ -81,4 +81,4 @@ public class WordTest {
 }
 ```
 5、结果<br>
-![](https://dn-serical.qbox.me/11.png)
+![](../static/11.png)
