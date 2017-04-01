@@ -90,6 +90,20 @@ Stopping secondary namenodes [0.0.0.0]
 0.0.0.0: stopping secondarynamenode
 [root@master ~]# jps
 4184 Jps
+
+# 查看集群状态
+[root@master hadoop]# hdfs dfsadmin -report
+Configured Capacity: 56239325184 (52.38 GB)
+Present Capacity: 49572122624 (46.17 GB)
+DFS Remaining: 49572085760 (46.17 GB)
+DFS Used: 36864 (36 KB)
+DFS Used%: 0.00%
+Under replicated blocks: 0
+Blocks with corrupt replicas: 0
+Missing blocks: 0
+Missing blocks (with replication factor 1): 0
+-------------------------------------------------
+Live datanodes (3):
 ```
 
 ### HDFS基本使用
