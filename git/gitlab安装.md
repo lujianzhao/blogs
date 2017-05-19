@@ -35,7 +35,22 @@ sudo gitlab-ctl reconfigure
 ### 4. Browse to the hostname and login
 
 On your first visit, you'll be redirected to a password reset screen to provide the password for the initial administrator account. Enter your desired password and you'll be redirected back to the login screen.
-The default account's username is root. Provide the password you created earlier and login. After login you can change the username if you wish.
+The default account's username is `root`. Provide the password you created earlier and login. After login you can change the username if you wish.
 
  For configuration and troubleshooting options please see the [Omnibus GitLab documentation](http://doc.gitlab.com/omnibus/)<br>
  If you are located in China, try using https://mirror.tuna.tsinghua.edu.cn/help/gitlab-ce/
+
+### 5. Gitlab uninstall
+ ```bash
+ # 删除gitlab
+ sudo gitlab-ctl uninstall
+ sudo rpm -e gitlab-ce
+
+# 重装需要删除如下目录
+[root@localhost ~]# find / -name gitlab
+
+# ruby_block[supervise_redis_sleep] action run卡住
+[root@localhost ~]# systemctl restart gitlab-runsvdir
+# 再次执行
+[root@localhost ~]# gitlab-ctl reconfigure
+ ```
