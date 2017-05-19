@@ -1,0 +1,6 @@
+```css
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+```
