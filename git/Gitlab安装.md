@@ -43,8 +43,8 @@ The default account's username is `root`. Provide the password you created earli
 ### 5. Gitlab uninstall
  ```bash
  # 删除gitlab
- sudo gitlab-ctl uninstall
- sudo rpm -e gitlab-ce
+[root@localhost ~]# gitlab-ctl uninstall
+[root@localhost ~]# rpm -e gitlab-ce
 
 # 重装需要删除如下目录
 [root@localhost ~]# find / -name gitlab
