@@ -48,6 +48,7 @@ The default account's username is `root`. Provide the password you created earli
 
 # 重装需要删除如下目录
 [root@localhost ~]# find / -name gitlab
+[root@localhost ~]# find / -name gitlab|xargs rm -rf
 
 # ruby_block[supervise_redis_sleep] action run卡住
 [root@localhost ~]# systemctl restart gitlab-runsvdir
