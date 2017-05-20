@@ -71,3 +71,48 @@ Query OK, 1 row affected (0.00 sec)
 点击`开始安装`即完成安装。
 > 您的程序已经安装, 要重新安装请删除 `system/config/install.lock.php`<br>
 > 然后删除 安装文件`/install/index.php`
+
+### Centos7以前开机启动
+```bash
+# 老的方式在Centos7无效
+[root@localhost ~]# ln -s /opt/lampp/xampp /etc/init.d/xampp
+[root@localhost ~]# chkconfig --add xampp
+[root@localhost ~]# chkconfig xampp on
+[root@localhost ~]# chkconfig --list xampp
+注意：该输出结果只显示 SysV 服务，并不包含原生 systemd 服务。SysV 配置数据可能被原生 systemd 配置覆盖。
+      如果您想列出 systemd 服务,请执行 'systemctl list-unit-files'。
+      欲查看对特定 target 启用的服务请执行
+      'systemctl list-dependencies [target]'。
+xampp          	0:关	1:关	2:开	3:开	4:开	5:开	6:关
+```
+
+### Centos7开机启动
+`/usr/lib/systemd/` (user)登录才能运行<br>
+`/lib/systemd/system/` (system)不需要登录就能运行
+```bash
+[root@localhost ~]# cd /lib/systemd/system
+[root@localhost system]# vim xampp.service
+```
+```bash
+[Unit]
+Description=xampp
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/lampp/xampp start
+ExecReload=/opt/lampp/xampp restart
+ExecStop=/opt/lampp/xampp stop
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+```
+```bash
+# 使用下面脚本管理
+[root@localhost system]# systemctl status xampp
+[root@localhost system]# systemctl start xampp
+[root@localhost system]# systemctl stop xampp
+[root@localhost system]# systemctl enable xampp
+[root@localhost system]# systemctl disable xampp
+```
