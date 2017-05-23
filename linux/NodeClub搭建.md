@@ -14,6 +14,11 @@
 
 ### 邮箱配置
 ```bash
+# config.js
+    {
+        debug: false // 重点注意
+    }
+
 // 邮箱配置
   mail_opts: {
     host: 'smtp.qq.com',
@@ -82,4 +87,30 @@ See 'systemctl status rc-local.service' for details.
 5月 23 14:24:13 localhost.localdomain rc.local[1162]: syscall: 'open',
 5月 23 14:24:13 localhost.localdomain rc.local[1162]: path: 'logs/cheese.log' }
 Hint: Some lines were ellipsized, use -l to show in full.
+```
+
+### 上面rc.local脚本有问题
+```bash
+# 错误方式
+[root@localhost ~]# forever ~/source/nodeclub/app.js
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+log4js.fileAppender - Writing to file logs/cheese.log, error happened  { [Error: ENOENT: no such file or directory, open 'logs/cheese.log']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'logs/cheese.log' }
+# 正确方式
+[root@localhost ~]# cd /root/source/nodeclub/ && forever start app.js
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+info:    Forever processing file: app.js
+```
+
+### forever start 上面少了start
+```bash
+export PATH=/usr/local/nodejs/bin
+cd /root/source/nodeclub/ && forever start app.js
+# 两种都行
+forever start /root/source/nodeclub/app.js
 ```
