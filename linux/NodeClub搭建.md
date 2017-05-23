@@ -13,7 +13,7 @@
 **注意不要在`windows`下`make install` 复制到`centos`上，不然`make build`出现权限问题**
 
 ### 邮箱配置
-```json
+```bash
 // 邮箱配置
   mail_opts: {
     host: 'smtp.qq.com',
