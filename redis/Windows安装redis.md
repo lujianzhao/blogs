@@ -14,6 +14,10 @@ requirepass foobared
 redis-server --service-install redis.windows-service.conf
 ```
 ### 二、多实例安装
+修改`redis.windows-service.conf`中的`port`端口，必须与其他实例端口不一样。
+```ini
+port 6379
+```
 参照上面第二步，命令行（**管理员**）进入解压的目录，增加`--service-name`参数去重命名`服务名`
 ```ini
 redis-server.exe --service-install redis.windows-service.conf --service-name redis1
