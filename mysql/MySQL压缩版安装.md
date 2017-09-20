@@ -51,3 +51,7 @@ mysql -u root -p
 mysql> set password for root@localhost = password('123456');
 Query OK, 0 rows affected, 1 warning (0.00 sec)
 ```
+
+### 六、可能出现的错误
+**无法启动此程序，因为计算机中丢失MSVCR120.dll。请重新安装该程序已解决问题**
+[下载](https://www.microsoft.com/en-us/download/details.aspx?id=40784)安装重新进行第三步
